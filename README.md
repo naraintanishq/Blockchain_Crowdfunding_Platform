@@ -1,5 +1,5 @@
 # Blockchain Crowdfunding platform
-This project is a decentralized crowdfunding platform built using blockchain technology. It allows users to create and contribute to campaigns in a secure and transparent manner. Donors can send funds directly to campaign owners using Ethereum-based smart contracts, ensuring trust and immutability. The platform integrates MetaMask for seamless transaction handling and displays campaign details, such as title, description, target amount, and collected donations. Additionally, the platform features a chatbot for user assistance and a donation pop-up modal to facilitate easy contributions.
+This project is a decentralized crowdfunding platform built using blockchain technology. It allows users to create and contribute to campaigns in a secure and transparent manner. Donors can send funds directly to campaign owners using Ethereum-based smart contracts, ensuring trust and immutability. The platform integrates MetaMask for seamless transaction handling and displays campaign details, such as title, description, target amount, and collected donations. Additionally, the platform features a donation pop-up modal to facilitate easy contributions.
 
 Try running some of the following tasks:
 
