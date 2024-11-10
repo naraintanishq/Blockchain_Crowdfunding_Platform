@@ -9,7 +9,7 @@ const NavBar = () => {
   const { currentAccount, connectWallet } = useContext(CrowdFundingContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuList = ["White Paper", "Project", "Donation", "Members"];
+  const menuList = [{title : "White Paper", url : '/'}, {title: "Donation", url : '/'},{title : "About", url : '/about'}, {title : "Contect", url : '/contect'}];
 
   return (
     <div className='backgroundMain'>
@@ -31,12 +31,12 @@ const NavBar = () => {
                 {menuList.map((el, i) => (
                   <li key={i + 1}>
                     <a 
-                      href='/'
+                      href={el.url}
                       aria-label='Our Product'
                       title='Our product'
                       className='font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400'
                       >
-                        {el}
+                        {el.title}
                       </a>
                   </li>
                 ))}

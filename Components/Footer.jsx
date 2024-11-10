@@ -3,25 +3,17 @@ import React from 'react'
 const Footer = () => {
   const productList = ["Market", "ERC20 Token", "Donation"];
   const contactList = [
-    "support@whitecompany.com",
-    "info@whitecompany.com",
-    "contact us",
+   { title : "support@whitecompany.com", url : "support@whitecompany.com"},
+   { title : "info@whitecompany.com", url : "support@whitecompany.com"},
+    {title : "contact us",  url : '/contect'},
   ]
 
-  const usefullLink = ["Home", "About Us", "Comapany Bio"];
+  const usefullLink = [{title : "Home", url : '/'}, {title : "About", url : '/about'}, {title : "Comapany Bio", url : '/about'}];
   return (
-    <footer className='text-center text-white backgroundMain lg:text-left' >
-      <div className='mx-6 py-10 text-center md:text-left'>
+    <footer className='text-center text-white backgroundMain lg:text-left ' >
+      <div className='mx-6 py-10 text-center md:text-left '>
         <div className='grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
-          <div className=''>
-            <h6 className='mb-4 flex items-center justify-center font-semibold uppercase md:justify-start'>
-              White Company
-            </h6>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta et aspernatur recusandae, quidem error excepturi, nemo quaerat mollitia cum
-              alias repellat, veniam illo? Tempora, excepturi.
-            </p>
-          </div>
+        
           <div className=''>
             <h6 className='mb-4 flex items-center justify-center font-semibold uppercase md:justify-start'>
               Proudcts
@@ -40,8 +32,8 @@ const Footer = () => {
             </h6>
             {usefullLink.map((el, i) => (
               <p className='mb-4' key={i + 1}>
-                <a href='#!'>
-                  {el}
+                <a href={el.url}>
+                  {el.title}
                 </a>
               </p>
             ))}
@@ -52,8 +44,8 @@ const Footer = () => {
             </h6>
             {contactList.map((el, i) => (
               <p className='mb-4' key={i + 1}>
-                <a href='#!'>
-                  {el}
+                <a href={el.url}>
+                  {el.title}
                 </a>
               </p>
             ))}
