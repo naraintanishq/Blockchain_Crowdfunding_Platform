@@ -9,7 +9,7 @@ const NavBar = () => {
   const { currentAccount, connectWallet } = useContext(CrowdFundingContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuList = [{title : "White Paper", url : '/'}, {title: "Donation", url : '/'},{title : "About", url : '/about'}, {title : "Contect", url : '/contect'}];
+  const menuList = [{title : "Home", url : '/'}, {title: "Donation", url : '/donation'},{title : "About Us", url : '/about'}, {title : "Contact Us", url : '/contect'}];
 
   return (
     <div className='backgroundMain'>

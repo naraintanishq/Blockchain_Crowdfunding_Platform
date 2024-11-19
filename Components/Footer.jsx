@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = () => {
-  const productList = ["Market", "ERC20 Token", "Donation"];
+  const productList = [{title: "Market", url:"https://coinmarketcap.com/"}, {title: "Donation", url: "/donation"}];
   const contactList = [
    { title : "support@whitecompany.com", url : "support@whitecompany.com"},
    { title : "info@whitecompany.com", url : "support@whitecompany.com"},
@@ -19,9 +19,9 @@ const Footer = () => {
               Proudcts
             </h6>
             {productList.map((el, i) => (
-              <p className='mb-4' key={i+1}>
-                <a href='#!'>
-                  {el}
+              <p className='mb-4' key={i + 1}>
+                <a href={el.url}>
+                  {el.title}
                 </a>
               </p>
             ))}
